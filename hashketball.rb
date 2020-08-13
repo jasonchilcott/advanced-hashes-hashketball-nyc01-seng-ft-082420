@@ -206,7 +206,8 @@ def big_shoe_rebounds
       attr_values.each do |player|
         if player[:shoe] > biggest_shoe
           biggest_shoe = player[:shoe]
-          binding.pry
+          num_rebounds = player[:rebounds]
+      
         end
       end
     end
