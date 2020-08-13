@@ -178,7 +178,7 @@ def player_numbers(asked_team)
       end
     end
   end
-  nums
+  number_array
 end
 
 def player_stats(asked_player)
