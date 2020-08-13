@@ -146,7 +146,7 @@ def shoe_size(asked_player)
     team.each do |team_attr, attr_values|
       next unless team_attr == :players
 
-      data.each do |player|
+      attr_values.each do |player|
         return player[:shoe] if player[:player_name] == asked_player
       end
     end
