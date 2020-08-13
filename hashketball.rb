@@ -173,7 +173,7 @@ def player_numbers(asked_team)
     team.each do |team_attr, attr_values|
       next unless team_attr == :players
 
-      data.each do |attr_values|
+      attr_values.each do |attr_values|
         number_array << attr_values[:number]
       end
     end
