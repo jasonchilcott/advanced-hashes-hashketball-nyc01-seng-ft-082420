@@ -195,3 +195,19 @@ def player_stats(asked_player)
   end
   stat_hash
 end
+
+def big_shoe_rebounds
+  #
+  biggest_shoe = 0
+  num_rebounds = 0
+  game_hash.each do |home_away, team|
+    team.each do |team_attr, attr_values|
+      next unless team_attr == :players
+      attr_values.each do |player|
+        if player[:shoe] > biggest_shoe
+          biggest_shoe = player[:shoe]
+        end  
+      end  
+    end  
+  end  
+end  
